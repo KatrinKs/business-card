@@ -1,0 +1,268 @@
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1280px;
+
+  padding-bottom: 4px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 944px;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.socials {
+  width: 100%;
+}
+
+.hero-button {
+  width: 300px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* MAIN:HERO_TEXT */
+
+.hero-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 944px;
+
+  padding: 80px 0 88px 0;
+
+}
+
+.hero-group {
+  /* display: flex;
+  justify-content: flex-start;
+  flex-direction: column; */
+  width: 464px;
+  height: 384px;
+}
+
+.hero__about-profession {
+  padding-top: 36px;
+  padding-bottom: 13px;
+
+  /* font-size: 24px;
+  line-height: 28px; */
+  font-weight: 400;
+
+  color: #FFBB01;
+}
+
+.hero__about-name {
+  margin-bottom: 24px;
+
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 59px;
+}
+
+.hero__about-work {
+  margin-bottom: 37px;
+
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.avatar {
+  width: 376px;
+  height: 376px;
+
+  object-fit: cover;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+/* MAIN:FEATURES */
+
+.features {
+  /* display: flex;
+  flex-direction: column; */
+
+  padding: 88px 168px;
+}
+
+.features__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+
+  margin-bottom: 48px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  
+  width: 944px;
+  height: 454px;
+}
+
+/* MAIN:PORTFOLIO */
+
+.portfolio {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+  "portfolio__title"
+  "portfolio__cards";
+
+  width: 944px;
+  margin: 88px 168px;
+}
+
+.portfolio__title {
+  grid-area: portfolio__title;
+  width: 100%;
+  margin-bottom: 49px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.portfolio__cards {
+  grid-area: portfolio__cards;
+  position: relative;
+  width: 100%;
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* MAIN:GALLERY */
+
+.gallery {
+  width: 1280px;
+  padding: 88px 0;
+}
+
+.gallery_div {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  grid-template-rows: repeat(3, 224px);
+  gap: 16px;
+
+  width: 994px;
+  margin: 0 168px;
+}
+
+/* FOOTER (CONTACTS) */
+
+.contacts {
+  display: flex;
+  width: 1280px;
+}
+
+.contacts__section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas: 
+  "contacts__title . ."
+  "contacts__form contacts__text contacts__text"
+  "contacts__form privacy-policy privacy-policy";
+
+  width: 944px;
+  margin: 88px 168px;
+}
+
+.contacts__title {
+  grid-area: contacts__title;
+
+  width: 100%;
+  margin-bottom: 48px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.contacts__form {
+  grid-area: contacts__form;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "inputs__title"
+  "inputs__users"
+  "inputs__users"
+  "button-style";
+
+  width: 464px;
+  height: 422px;
+  padding: 37px 32px 34px 32px;
+  margin-right: 96px;
+  /* gap: 10px; */
+  
+  box-shadow: -5px 5px 0px #FFC41D;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+.inputs__title {
+  grid-area: inputs__title;
+  margin-bottom: 32px;
+  margin-left: 1px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+}
+
+.inputs-button {
+  grid-area: button-style;
+  width: 400px;
+  margin-top: 32px;
+}
+
+.contacts__text-info_socials {
+  position: relative;
+  bottom: 103px;
+}
+
+.contacts__text-info_link_list {
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  bottom: 13px;
+}
+
+.privacy-policy {
+  grid-area: privacy-policy;
+
+  font-size: 15px;
+  line-height: 17.58px;
+  text-decoration: underline;
+  color: #949494;
+}
